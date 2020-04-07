@@ -5,12 +5,13 @@ menu:
 logo: onion
 
 more:
-  友情链接: /links.html
+  卡片: /postcard
   微博: http://weibo.com/u/1717168892
-  Twitter: Zoeonion
-  rss: /rss2.xml
-  关于我: /
+  Twitter: https://twitter.com/ZoeOnion
+  关于米粒: https://t.me/milimilimilimilimili
+  关于我: /about
 
+  
 about:
   title: Memory is onion
   link: https://github.com/gaoryrt/hexo-theme-pln
