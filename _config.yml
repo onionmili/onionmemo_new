@@ -85,6 +85,9 @@ archive_generator:
   per_page: 40  #值为0表示不分页，按需填写
   yearly: true  #是否按年生成归档
   monthly: false  #为了加快生成速度，按月归档就不要了
+  
+category_generator:
+   per_page: 40  #值为0表示不分页，按需填写
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
