@@ -1,3 +1,6 @@
 
 # Hexo deployment directory
 .deploy_git
+
+# 排除备份目录
+.deploy_git.backup_20250820_143002
