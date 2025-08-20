@@ -4,3 +4,6 @@
 
 # 排除备份目录
 .deploy_git.backup_20250820_143002
+
+# Hexo deploy备份目录
+.deploy_git.backup_*
