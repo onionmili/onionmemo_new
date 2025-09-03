@@ -113,7 +113,6 @@ async function build() {
     
     console.log('创建首页和归档页...');
     // 手动创建首页
-    const posts = hexo.locals.get('posts');
     const indexHtml = `<!DOCTYPE html>
 <html>
 <head>
