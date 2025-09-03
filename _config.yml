@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: My Hexo Blog
+title: 洋葱备忘录
 subtitle: ''
-description: ''
-author: John Doe
+description: '洋葱的个人博客'
+author: 洋葱
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Pages, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://onionmemo.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
   lang: en
