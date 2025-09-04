@@ -120,10 +120,10 @@ async function build() {
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>${hexo.config.title}</title>
-  <meta name="description" content="${hexo.config.description}">
+  <title>洋葱备忘录</title>
+  <meta name="description" content="洋葱的个人博客">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/m.min.css">
 </head>
 <body>
   <a id="top"></a>
@@ -131,7 +131,7 @@ async function build() {
     <div class="main-ctnr">
       <div class="navigation">
         <div class="nav-left">
-          <a href="/" class="logo">${hexo.config.title}</a>
+          <a href="/" class="logo">洋葱备忘录</a>
         </div>
         <div class="nav-right">
           <a href="https://github.com/onionmili/">Github</a>
@@ -164,7 +164,7 @@ async function build() {
     </div>
   </div>
   <footer class="page-footer">
-    <p>© ${new Date().getFullYear()} ${hexo.config.author}</p>
+    <p>© ${new Date().getFullYear()} 洋葱</p>
   </footer>
 </body>
 </html>`;
