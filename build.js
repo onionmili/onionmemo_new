@@ -111,111 +111,81 @@ async function build() {
     console.log('生成静态文件...');
     await hexo.call('generate');
     
-    console.log('创建首页和归档页...');
-    // 手动创建首页
-    const indexHtml = `<!DOCTYPE html>
-<html>
+    console.log('为pln主题创建首页...');
+    // 为pln主题手动创建首页
+    const postsArray = posts.toArray ? posts.toArray() : posts;
+    const recentPosts = postsArray.slice(0, 10);
+    
+    const plnIndexHtml = `<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <title>${hexo.config.title}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="${hexo.config.description}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div id="container">
-    <div id="header">
-      <h1><a href="/">${hexo.config.title}</a></h1>
-      <p>${hexo.config.description}</p>
-    </div>
-    <div id="main">
-      <div id="content">
-        <h2>最新文章</h2>
-        <div class="posts">`;
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="navigation">
+        <div class="nav-left">
+          <a href="/" class="logo">${hexo.config.title}</a>
+        </div>
+        <div class="nav-right">
+          <a href="https://github.com/onionmili/">Github</a>
+        </div>
+      </div>
+      <ul class="posts">`;
     
-    let postsHtml = '';
-    const postArray = posts.toArray ? posts.toArray() : posts;
-    const recentPosts = postArray.slice(0, 10);
-    
+    let postsListHtml = '';
     recentPosts.forEach(post => {
-      postsHtml += `
-        <article class="post">
-          <h3><a href="/${post.path}">${post.title}</a></h3>
-          <p class="meta">发布于 ${post.date.format('YYYY-MM-DD')}</p>
-          <div class="excerpt">${post.excerpt || post.content.substring(0, 200) + '...'}</div>
-        </article>`;
+      const postDate = post.date.format('YYYY-MM-DD');
+      postsListHtml += `
+        <li class="post">
+          <h2 class="post-title">
+            <a href="/${post.path}">${post.title}</a>
+          </h2>
+          <p class="post-meta">
+            <time datetime="${post.date.toISOString()}">${postDate}</time>
+          </p>
+          <div class="post-excerpt">
+            ${post.excerpt || post.content.substring(0, 120) + '...'}
+          </div>
+        </li>`;
     });
     
-    const footerHtml = `
-        </div>
-        <div class="archive-link">
-          <p><a href="/archives/">查看所有文章 (${posts.length} 篇)</a></p>
-        </div>
+    const plnFooterHtml = `
+      </ul>
+      <div class="pagination">
+        <span class="page-info">显示 ${recentPosts.length} / ${posts.length} 篇文章</span>
       </div>
     </div>
-    <div id="footer">
-      <p>&copy; ${new Date().getFullYear()} ${hexo.config.author}</p>
-    </div>
   </div>
+  <footer class="page-footer">
+    <p>© ${new Date().getFullYear()} ${hexo.config.author}</p>
+  </footer>
 </body>
 </html>`;
     
-    const fullHtml = indexHtml + postsHtml + footerHtml;
-    fs.writeFileSync('public/index.html', fullHtml);
-    
-    // 创建归档页面
-    const archivesHtml = `<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>文章归档 - ${hexo.config.title}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <div id="container">
-    <div id="header">
-      <h1><a href="/">${hexo.config.title}</a></h1>
-    </div>
-    <div id="main">
-      <div id="content">
-        <h2>文章归档 (${posts.length} 篇)</h2>
-        <div class="archives">`;
-    
-    let archivesListHtml = '';
-    postArray.forEach(post => {
-      archivesListHtml += `
-        <div class="archive-item">
-          <span class="date">${post.date.format('YYYY-MM-DD')}</span>
-          <a href="/${post.path}">${post.title}</a>
-        </div>`;
-    });
-    
-    const archivesFooterHtml = `
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <p><a href="/">返回首页</a></p>
-    </div>
-  </div>
-</body>
-</html>`;
-    
-    const fullArchivesHtml = archivesHtml + archivesListHtml + archivesFooterHtml;
-    
-    if (!fs.existsSync('public/archives')) {
-      fs.mkdirSync('public/archives');
-    }
-    fs.writeFileSync('public/archives/index.html', fullArchivesHtml);
+    const fullPlnHtml = plnIndexHtml + postsListHtml + plnFooterHtml;
+    fs.writeFileSync('public/index.html', fullPlnHtml);
     
     console.log('构建完成!');
     
     // 检查生成结果
     if (fs.existsSync('public/index.html')) {
       console.log('✅ index.html 已生成');
+      const indexContent = fs.readFileSync('public/index.html', 'utf8');
+      console.log(`✅ 首页内容长度: ${indexContent.length} 字符`);
     } else {
       console.log('❌ index.html 未生成');
     }
+    
+    // 检查生成的文件
+    const publicFiles = fs.readdirSync('public');
+    console.log(`✅ 已生成 ${publicFiles.length} 个文件/目录`);
     
     await hexo.exit();
   } catch (error) {
