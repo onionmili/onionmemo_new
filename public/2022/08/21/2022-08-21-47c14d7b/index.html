@@ -1,20 +1,89 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>剑道一年学习小记 - 洋葱备忘录</title>
+  <meta name="description" content="剑道一年学习小记">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>剑道一年学习小记</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-08-21T14:00:00.000Z">2022-08-21</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 剑道一年学习小记
+date: 2022-08-21 22:00:00
+categories: 坚持
+
+
+---
+
+“肩膀放松”“手腕放松”“放松放松放松”..
+
+剑道训练的时候，老师总是这样对我说，和小时候二胡课仇老师说的话一样。然而，我就是这么容易紧绷的人。好在持续的被提醒和自我提醒下，这一年里已经在逐渐改善中了。
+
+
+在剑馆里，我可以感受到呼吸的力量，一呼一吸之间学习如何打出坚定的一刀。
+
+学什么都没有什么长性的人，这次学习剑道一年了，紧张兮兮的考过了一级然后通过了CKOU的初段审查。
+
+
+审查那天，馆里坐着7位审查老师和1位翻译老师，我们的馆长则全程坐在馆外抽烟。其中的翻译老师两天前还在馆里指导过我的剑道型，其实他的中文不太行（笑——），章平老师在某个周六我去馆里拿木刀的时候，和他有过一面之缘，他当时正在训练一位小小朋友，既严厉又耐心。稍微有面熟的人，会有一点点心安。不过他们清一色穿着白衬衣打着暗红色领带，正位上的主考官円谷老师顶着大热天穿着西服外套。气氛还是很严肃的。
+
+
+话说回来，考前焦虑了一周，到底是因为平时太过松散懒惰，临了就慌了。每一个项目比完之后，老师都有给我们做详细的点评，核心思想就是你们这样离二段可太远了，得每天好好练习啊。（低下了羞愧的头颅。）
+
+
+要反复练习的动作看起来非常单一枯燥，摆正中段、踏步、自然有力的举刀、步伐跟上、落刀。简单的动作背后的意义，我一直在琢磨——坚持住身姿冲进对手的攻击范围要克服害怕被打的恐惧，要克服内心的怯懦不是一件一朝一夕的事情，大概还要磨练许久吧。
+
+
+每每汗流浃背背着护具冲来冲去，感觉动作一直在变形，有意思的是在”面“背后看到的对手、距离、气息一切都不一样了，在某一次汗水糊满脸的时候，忽然对距离的感觉有了新的体验，不是靠眼睛去识别距离，是靠某种感觉。吴老师说，你们要在右脚上长出一支眼睛去丈量和对手的距离。
+
+
+另外一个需要修炼的主题是，如何面对比自己强大的对手，如何面对不确定性和变化。剑道毕竟不是一个做做样子的表演，它有强烈的竞技和对抗性，而对手不是挑选来的。可能比你力量大、身体长、体力好，反应快，怎么应变各种不同的对战局面？我甚至还没有想到如何赢得比赛，对我而言，能对自己的打击有信心，能镇定面对他们，就是一件不容易的事情了。
+
+
+写到这里，忽然想到这可真不是一件我擅长的运动，有那么多需要克服和挑战自我的点，好在这也是一项可以长久修炼的运动，我还有足够的耐心去磨练、改变和成长。
+
+
+一年后的二段审查再见吧，希望那个时候的我可以成为一个笃定、强大和自信的剑道选手。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

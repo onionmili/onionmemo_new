@@ -1,20 +1,122 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>回归季几小则 - 洋葱备忘录</title>
+  <meta name="description" content="回归季几小则">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>回归季几小则</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2017-06-27T16:00:35.000Z">2017-06-28</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 回归季几小则
+date: 2017-06-28 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+
+
+---
+
+(一) 家里小，不习惯
+
+卤肉饭刚回来的一阵子不太高兴，问他为什么，他很苦恼的说，家里太小了。
+
+卤肉饭之前住哪里呢？公司员工宿舍兼食堂的二楼，一间卧室而已。
+
+我就抗议了，你还敢嫌弃家里小！？卤肉饭很认真地说，之前楼下食堂晚饭之后，整一层都是我的，那么多椅子，我想坐哪一张都可以，多宽敞
+
+我....
+
+
+
+(二)专业修空调五百年
+
+我一直觉得家里空调坏了。卤肉饭是骄傲的机电工程师，机电工程师干啥的呢？简单概括就是管电箱水箱空调和消防的，他一回家我就吵着让他修空调。
+
+终于有一天，卤肉饭大发慈悲地说不收上门费修一下。
+
+饭工背着手抬着头看了几眼，最后一扭头告诉我，你需要换一下遥控板的电池，然后踱步走了出去，留我一人在空调房里瑟瑟发抖。
+
+
+
+(三)老婆的锅
+
+一天晚上，卤肉饭正鏖战dota2，我串门围观，瞄到桌子上一包我俩都爱吃的芒果干，拿起来扭头就跑，卤肉饭急了起身欲夺，可是一边战况紧急，我乘人之危而得手。
+
+芒果干藏好后，又跑回去挑衅卤肉饭，却瞥到队友正在喷他刚刚的一波失误，卤肉饭忙不迭的打字回复：都是老婆在旁边捣乱。又留我一人在芒果干的香味中凌乱。
+
+
+
+(四)吃醋大王
+
+卤肉饭是个吃醋大王，比如喜欢吃库里的醋(是的，本葱是库里迷妹)，可有一些醋吃得我是措手不及。
+
+一天，我的手机Siri无意被触发，一个好听的男声：对不起我没听清你要说什么。
+
+卤肉饭暴起抓住手机开始和Siri对骂，无奈我的Siri非常儒雅不理睬他，最后卤肉饭气也没处撒，只能扼杀了我的男Siri，怒把声音换成了女声才心满意足放过了我的小手机。
+
+
+
+ 
+
+(五)起床铃声
+
+刚回来的几天，卤肉饭自己在家天天北京躺，我则仍然早起去上班赚钱养家。
+
+一日，卤肉饭忍不住喊了起来，你知道吗？你每天一大早的闹钟叫醒的都是我！
+
+我：对呀，你醒来再叫我起床啊，你知道每天都要被闹钟叫起来的苦与孤独吗？
+
+卤肉饭...
+
+
+
+
+
+(六)卤肉饭，欢迎回家哦，比心。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

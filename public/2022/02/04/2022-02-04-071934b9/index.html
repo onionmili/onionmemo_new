@@ -1,20 +1,109 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>时间妖怪之歌 - 洋葱备忘录</title>
+  <meta name="description" content="时间妖怪之歌">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>时间妖怪之歌</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-02-04T14:00:00.000Z">2022-02-04</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 时间妖怪之歌
+date: 2022-02-04 22:00:00
+categories: 虚构
+
+
+---
+
+时间是你看不见的妖怪
+
+每个人都拥有一只专属
+
+它看起来古怪
+
+但你别怕
+
+
+
+每一天 每一月 每一年
+
+它悄悄来到
+
+送给你一份礼物
+
+留下一份刻度
+
+这是今日的礼物
+
+时钟转过去两圈
+
+这是春天的礼物
+
+叶子从树枝的根儿开始萌芽
+
+这是今年的礼物
+
+你收到了吗
+
+
+
+别怕时钟不停在转
+
+别怕树叶伸展又坠落
+
+别怕十进制的数字又递增
+
+
+
+礼物 快看看你的礼物
+
+已经悄悄放进了你的梦里
+
+
+
+==END==
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,93 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>烩豆腐 - 洋葱备忘录</title>
+  <meta name="description" content="烩豆腐">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>烩豆腐</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2021-02-27T05:10:01.000Z">2021-02-27</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 烩豆腐
+date: 2021-02-27 13:10:01
+categories: 食谱
+
+
+---
+
+材料——
+
+韧豆腐/北豆腐 一块
+
+虾干7个，提前2小时泡发
+
+花菇，提前一晚上泡，水留用
+
+生姜丝
+
+西葫芦一个，切丝
+
+步骤——
+
+1、腌豆腐，豆腐切一厘米厚的片，加2勺生抽1勺鱼露腌渍
+
+2、花菇、生姜切片切丝，西葫芦切丝
+
+3、热锅半勺油，炒西葫芦丝半分钟，捞出来；花菇、生姜半勺油热锅煸炒香，捞出来。锅擦干净。
+
+4、2勺油，热锅，中火煎豆腐，一面1分半左右，煎好轻轻翻面，再煎1分种。加花菇、生姜丝，和水刚好没过材料，小火炖3分钟左右。
+
+5、期间准备调味，把1勺蚝油混合1勺淀粉，再加上大约5、60ml左右的水，搅匀成带蚝油的淀粉水。
+
+6、加入西葫芦丝继续炖，在汤水的分量沉到所有食材以下半厘米左右时，把淀粉水再次搅匀，少量多次地倒到锅里。在汤汁收到比自己想要的浓稠度稍微稀一点的时候，就可以出锅了。
+
+7、如果提前准备了高汤，用高汤炖更好。
+
+
+
+
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

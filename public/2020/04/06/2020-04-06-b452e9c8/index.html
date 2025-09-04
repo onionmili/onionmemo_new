@@ -1,20 +1,105 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>洋葱备忘录 - 洋葱备忘录</title>
+  <meta name="description" content="洋葱备忘录">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>洋葱备忘录</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2020-04-06T08:35:44.000Z">2020-04-06</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          
+## 为什么要自己建一个博客
+
+大约十年前周围搭建博客是很流行的，但是作为一个假的理科生技术渣渣，这个自己搭博客只能作为一个美好的愿望吧。
+
+十年之间陆陆续续在各种平台写过东西，每个阶段的性格、关注的重点都不太一样，散落各处，也遇到了很多与人的分分合合，还有依赖平台的局限性。年纪大了，真的开始喜欢回忆和记录了。
+
+于是就有了这个博客，一边记录现在和未来，一边陆陆续续把过去写的东西收拢起来。
+
+## 这个博客是怎么建起来的
+
+有了这个想法之后，2019年11月开始搜集资料，购买了一个域名。这里要感谢@FelixLi 和 @saltyLeo 给予的很多信息。门外汉对汪洋大海一样的信息来源有点手足无措，他们很耐心的解答了我一些无知的问题。
+
+搜索了一些教程，开始着手自己试图用vps+expressword的模式搭建博客，以失败告终。自己实践的情况和教程真的差别太大了，面对的问题都是一头雾水，想解决无从下手。计划搁浅。
+
+2020年4月，在群里再次聊起这个博客计划，@illusionbots 给予里巨大帮助。他推荐了采用 hexo+github+netlify的方式部署博客，并且几乎一步一步远程指导、排查问题，帮助把这个博客终于搭起来了。
+
+这部分内容 @illusionbots 博客里发布了一个教程，看起来非常顺利，然而实际过程中遭遇了很多手足无措，部署环境的障碍、网络问题、操作的不熟悉等等。如果是单看教程，对我而言还是如天书一般。如没有 @illusionbots 不厌其烦傻瓜式的教学，就不会有这个博客的成立。
+
+接下来的工作是要对博客模块进行自定义，修改主题遇到了新的知识点，花费了两天时间试图自己解决，不知其然也不知其所以然的搜索方法，导致很多操作走错了方向。这里学习到的最快解决方案就是——重头再来。这个博客大概重新装了5-6次（笑。
+
+此外，乘着各种重装的间歇，学习了一下hexo的其他简单的操作，发布帖子、增加分类等等，还有熟悉了下markdown的语法。
+
+期间得到了本博客主题的作者 @gaoryrt 的大力协助，他提供了好几种解决方案，使得我能够思路清楚的逐一尝试而不没头苍蝇乱跑。温柔的小楠姐在关键时刻给我的一通电话，分享了如何排查问题，查找问题解决方法的思路，让我稳定的情绪。
+
+于是，依靠梳理方案+冷静排查，这个博客最终成型展示出来了👏，感谢所有给予我帮助的人，正因为获得了你们耐心的指导，才最终没有辜负这个清明假期的投入。
+
+
+
+## 一些想法
+
+整个清明假期都在忙活这个事情。抱着电脑的我，不搭理家属也不搭理猫。
+
+家属觉得被冷落了，而我渴望他能理解我自己有点自己空间做自己事情的念头。哎，即使最亲密的人之间，也会有期望的落空、交流的隔阂。而如果是两个知识体系、生活阅历完全不同的人，在交流时候的障碍是巨大的。
+
+在为了解决自己的问题的时候，我尝试了各种搜索办法，可是几乎无法得到我想要的答案，大概就是我过于匮乏的程序知识让我难以和有一定技术门槛的信息库进行有效的沟通。换一个例子，如果让我去搜索下红烧肉怎么做可能会更简单一些。
+
+信息屏障是难以跨越的鸿沟，试图把所有人的信息面拉到同一水平不可能，要求所有人使用同一种逻辑同一种思考方式，也不可能。也许，解决鸿沟的方式，不是某个方案，可能要依靠情感。这就是为什么，即使和不同职业、不同知识背景的朋友、家人，我们的沟通远远舒适于其他地方。
+
+写着写着，还是陷进了情感乡。
+
+
+
+## 关于更新
+
+主要是为了记录自己时不时的胡思乱想，以及和一只猫的生活点滴。
+
+有空闲的时候会把以前的在其他各个地方写的记的东西有选择的搬运上来。
+
+感谢你的关注和阅读。
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

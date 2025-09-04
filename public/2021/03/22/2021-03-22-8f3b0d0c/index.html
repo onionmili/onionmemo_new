@@ -1,20 +1,99 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>周一也可以不糟糕 - 洋葱备忘录</title>
+  <meta name="description" content="周一也可以不糟糕">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>周一也可以不糟糕</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2021-03-22T05:10:01.000Z">2021-03-22</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 周一也可以不糟糕
+date: 2021-03-22 13:10:01
+categories: 现在的日常
+
+
+---
+
+经过了美好的周末，周一简直是一周里最不受欢迎的一天。
+
+ 
+
+早上起床，发现周末买的一件衣服买错了，临时多出来一件事——下班之后去陕西南路退衣服，不大不棘手却要挪动一番。
+
+ 
+
+在上班的路上心怀感恩，好歹还有一份自己比较擅长的工作，还能自力更生为自己的大小提前消费偿还账单。
+
+ 
+
+中午休息的时候，看到厂区里的三花非常悠然地窝在一棵矮树丛下享受树荫，有好天气，有温柔的小动物，这些美好快乐都无所谓今天是不是周一，真是好。
+
+
+
+上班某一刻摸鱼，认真学习了一下纺织品洗涤标签的含义，收获了有用的小知识——接下来但凡遇到衣服都要翻一番洗涤标签。我下班之后要去退的大衣竟然不可以机洗，必须退掉，这不适合我。
+
+ 
+
+下班搭车到了陕西南路，很顺利的衣服退掉了，再去试试本来想买的那一件，又好像不是很喜欢，于是空手离开的店里，仿佛白捡了一笔钱一样开心。
+
+在下班之前就寻思，难得又进城，要不要去那家一直想去的汉堡店呢，要不要去去好久没光顾的米粉店呢，没啥胃口又惦记着减肥，克制住了自己。
+
+ 
+
+发现附近有一家一直在收藏夹的面包店，离得不远，走走过去买点当早饭。在去面包店的路上，看到一家台湾小吃店，透过玻璃门望进去，似乎食客们吃的都好开心，惹得我也有点心动。又走了几步，路口有一家看起非常整洁靠谱的蛋饼店，打定主意回头路上一定买一个。终于在路的尽头，面包店到了。已经晚了，好些面包售空了，可以望见铺子后面就是做面包的，非常放心的盲选了几个全麦，私夹了一颗可露丽。
+
+ 
+
+拎着一袋面包往回走，在蛋饼铺子里吃到了满足的蛋饼，鸡蛋面皮是裹在油条的外面的，俩鸡蛋还有里脊。大概是周一的原因，大家伙都有点懒懒不着急的氛围，蛋饼铺的人儿也悠哉悠哉不紧不慢，和你还扯几句闲篇儿。
+
+ 
+
+举着蛋饼一边吃一边走，再路过台湾小吃店时，发现小小的店里位置都是满的，望着手里已经足够满足的蛋饼，打定主意下次路过的时候再来吃咸蛋蒸肉饼吧。
+
+ 
+
+于是，肚里满足的塞了一整个蛋饼油条，在慢慢回温的初春里，管它今天是周几呢，是普通、平静又收获一些小小期待的一天。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

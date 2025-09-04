@@ -1,20 +1,78 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>什么都不做也可以 - 洋葱备忘录</title>
+  <meta name="description" content="什么都不做也可以">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>什么都不做也可以</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2023-01-08T14:00:00.000Z">2023-01-08</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          某种新年焦虑，从新年第一天就开始在心里蔓延。
+
+疫情胜利了，再也不能成为我总是无所作为的借口了。
+
+迷茫之中，试图寻找一丝丝安慰似的，想着是不是要改变点什么，想破脑袋也没有想出个所以然来，于是对自己说，不如不改变。就继续保持这种暂时的状态，随走随看。
+
+于是，瘫倒在地上的我在想2023年什么都不做好像也可以。
+
+今天睡到中午，隐约看到窗帘透出的阳光不错。起床，把被子拖到了阳台，晒太阳。这一点点小小举动，一下子光线也照进了心里。
+
+这一周都在吃朋友送的年糕，软软胖胖糯糯的年糕宝宝，每一块都好吃。中午又炒了一盘，心满意足。
+
+因为阳光很好，召唤着我出门。骑车去了剑馆，这一路再也熟悉不过了，已经春夏秋冬白天黑夜地骑过很多遍了，这个冬日午后，路上车和人都不多的稀罕光景，太阳把空空的路照的更加发白，一时之间我有点恍惚，仿佛忘记了时间和地点。
+
+二十多天没有运动，去年一年都没有这么长休。剑馆里今天很热闹，好些熟面孔都来复健来着，和每个人都笑嘻嘻地打着招呼说好久不见。大家聊着生病的事情，聊着康复的节奏，金姐姐夸我瘦了，真开心啊。
+
+练习依然是老问题，顾师兄每次对练的时候都会小声提醒我的问题。还有新问题，练到最后心跳比以往都快都要响，我就溜下了场，暨古也没有参加。体力还需要一段时间慢慢恢复。还没有勇气出门跑步，依然希望每个月能去爬一次山，可不知道一月份能不能恢复基本状态。搭公家车回去的路上，困意袭来，即使心里有点按耐不住，身体的信号却很真实——不要着急，慢慢来吧。
+
+但，我已经有了一个好的开始，缓解了一定要做点什么的压力和焦虑，丢弃一定要用时间去换点什么的功利心，也放下了一些之前在心里有点过不去的人和事。在一个一个新问题发生之前，暂且就心安理得地无所事事吧。
+
+怀揣着这种心情，反而开始津津有味地去写2023年的计划清单了。抛下“应该要做什么”，不放弃追问自己“想要做什么”，写下了真正期待去做的事情，但什么都不做也可以。
+
+希望我会喜欢我的这一年，新的一年。
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

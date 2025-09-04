@@ -1,20 +1,108 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>我喜欢夏天吗 - 洋葱备忘录</title>
+  <meta name="description" content="我喜欢夏天吗">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>我喜欢夏天吗</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2023-07-31T14:00:00.000Z">2023-07-31</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          喜欢眼巴巴看着小姐姐用冰淇淋勺子舀出一个滚滚圆递给我
+
+喜欢切半的大西瓜里第一口甜脆
+
+喜欢把冰冷的苏打水倒进水杯里看杯壁噗噗冒出水汽
+
+喜欢透蓝天空里的云
+
+喜欢风
+
+还喜欢速干T恤衫和摇曳的裙摆
+
+喜欢走进空调下的那一阵哆嗦
+
+喜欢暴雨之后湿润的空气
+
+喜欢树荫下的温柔
+
+可是….
+
+不喜欢总是被汗水打湿头发黏糊糊
+
+不喜欢刺得让人睁不开的阳光
+
+不喜欢蚊子的嗡嗡嗡
+
+不喜欢辗转反侧难入睡的夜晚
+
+不喜欢超额的电费账单
+
+不喜欢不得不停下的红绿灯
+
+不喜欢防晒霜
+
+...
+
+到了七月的最后一天，夏天的路走了快有一半。每次发出“真好啊”的声音时候，我想我是喜欢夏天的一部分的，而这一部分的美好都来自夏天另一部分的不讨人喜欢。令我在想，这个世界上会有纯粹的喜欢吗，越发觉得没有了。只是多数时间里，我们因为喜欢的感觉被放大和突出，让我们忘记了带来喜悦背后一定有痛苦的背景色。
+
+这样想，并不让我感到悲观消极。同时看到了美好的另一面和痛苦的另一面，感官变得立体和丰富了，感受也不简简单单停留在“喜欢”或者“不喜欢”上了。
+
+这是，在这个夏天当中，突发的收获。这是本周想停下来，记录下来的事情。
+
+夏训log
+
+7.24   5km 跑   656  171 
+7.25   剑道练习 
+7.26   5km跑   650   172 
+7.27   35公里绕圈骑 
+7.29   60公里 浦西浦东休闲骑
+
+台风季的夜晚，太适合跑步了。进步了，这周两次都比较轻松就跑进7分钟，步频不知不觉也提上了170+。野哥说“有氧运动不会骗人”，只要坚持训练就一定会看到回报。生活里这样“诚不欺我”的事情已经越发稀少了呢。
+
+还去附近的路边绕圈骑车训练了一次，没有特别追求速度，某个之前很吃力才能维持的齿比和踏频，这次可以能稳定踩下来了，心率保持的也很好，都没到140。不过连续的运动以及夏天不佳的睡眠让我周五完全无力，连着周五、周六都休息了，周日陪同一老师去提新车，路上骑得也很疲惫。夏训到中期，已经完全消解了一开始的焦虑。没有立竿见影的进步，有会累需要停下来的时刻，这些都是我可以接受的事情了。因为，我相信自己，还会继续向前走下去的。
+
+七月一共骑了529.5km，跑了39.8km，减重4.8斤，失去了一段时间睡眠，又找了回来。一切，emm怎么说来着，稳中向好。希望，八月多给我一些幸运，如果没有，也请对我好一点。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>本周 - 洋葱备忘录</title>
+  <meta name="description" content="本周">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>本周</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2016-01-09T16:00:35.000Z">2016-01-10</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 本周
+date: 2016-01-10 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+
+
+
+---
+
+今天早上迷迷糊糊睡醒，热了两个花卷，打了一杯南瓜羹，因为忘记了火，水烧干了，差些把蒸锅热穿，幸好鼻子还是灵敏的，没出事情。
+
+中午看了半场勇士的比赛，他们穿了新的球衣，克莱有点打铁，格林状态神勇，心疼小巴的首发歇了几场就丢了，当然啦，我库最帅最萌。可以窝被子里看场比赛是周末最开心的事情。
+
+下午参加菜园子的聚会，大部分在去年的泰晤士小镇都见过了，凑了一桌八十分，weihe是个顶有趣的牌搭子，调侃调侃欢妹也是开心，还有我给力的晴妹妹队友也是极好的，活动间隙抽奖的运气是没有的，但最后卤肉饭从印尼带的咖啡豆换到了大队长的香水，鼓掌～
+
+晚上回家，炖了羊骨头汤，准备了明天的工作便当。
+
+昨天，卤肉饭的师弟和女朋友来陪我吃火锅，送他们出门的时候好羡慕他们有人手拉着手走路，可以一路搭公车。我呢，把帽子压一压，笼一笼衣服，灰溜溜一个人回去。
+
+烦恼还是那些，总是要重复吃那些做多了一顿吃不完的饭餐，早上总是要匆匆忙忙赶公交，回家总是安静的不得了，只能放一些无聊的电视。每天简讯的内容，总是“加班”“吃大排档”“晚安”“想你”。
+
+本周的单曲循环是“只谈风月不谈恋爱”。
+
+对了，今天还是一位好朋友的生日，送出去人生第一束鲜花，也不拘于一定要今天相聚，还在一个城市时时能见，对吧。
+
+这周就是这样，下周恐怕也大差不离。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

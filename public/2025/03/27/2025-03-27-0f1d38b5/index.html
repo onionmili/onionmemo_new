@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>樱花树下 - 洋葱备忘录</title>
+  <meta name="description" content="樱花树下">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>樱花树下</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2025-03-26T16:00:00.000Z">2025-03-27</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          
+> 本文转载自[微信公众号](https://mp.weixin.qq.com/)的导出文章
+上海有很多地方都有成片的樱花树，我住的附近也是，三三两两的，成排的，成片的，都有。
+
+今天白天坐公交车远远路过的时候，忽然被一个想法击中。樱花树好看的关键，并不在花，而在它经久累年的树干枝桠，枝桠的形状决定了那片浪漫色彩的分布。
+
+所以，在我心里，上海大部分樱花树美则美矣，却没什么特色。毕竟种樱花树是这些年才流行起来的事情。
+
+我只是想说树啦。
+
+前两天看一个视频介绍银杏树的进化，获得了一个小知识点，银杏叶叶片的缺口是进化的结果，但它并不是从一整片叶子分裂出来的，它是从类似松针那样的形态逐渐愈合而剩下一点点痕迹。好有意思，有没有。
+
+银杏因为竞争不过寒带热带的专项植物，选择生活在气候变化更多的温带，改变了自己的生长周期，成为了落叶植物。
+
+嗯，生活在温带的人们，也不得不好好调整自己以适应变化的环境，只是没想到这种变化是24小时的。
+
+小时候，小学校园里种了一对几百年的银杏老树，很喜欢这种树，秋天两棵树的叶子会落满学校的主干道。长大之后，才知道，“这种树”只剩下一种了，而且与之相关的生态系统也完全灭绝了，繁衍生息完全靠人类。不过也因此，它是一种没有啥天敌的植物，人类养活它也很简单，只是需要多一些耐心和时间而已。
+
+我只是想说时间啦。
+
+说起来，小时候经常被教育，只争朝夕、“一日之际在于晨”，要珍惜时间之类的。这背后的意思，我理解就是要“抢时间”。急急忙忙度过小时候和青年时光，也还是不明白我们在“抢”什么，“赶”什么。
+
+稍微有点感受到时间之珍贵，是在越发体会时间的含义之后，开始尝试和时间做朋友。隐约，我无法从时间那抢夺来什么，只能与它平等地进行交换。
+
+这种想法，不知道有没有人能理解.....
+
+![](./assets/17556660431480.8702885124866527.jpeg)
+
+这是很多年前在新宿御苑拍到的一小片老樱花树，看到它们盘穹的枝桠本身就有点惊讶了，当时还不算满开吧。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>剑道初学笔记 - 第二周 - 洋葱备忘录</title>
+  <meta name="description" content="剑道初学笔记 - 第二周">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>剑道初学笔记 - 第二周</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2021-07-19T14:06:26.000Z">2021-07-19</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          
+> 本文转载自[微信公众号](http://mp.weixin.qq.com/s?__biz=MzU2NTQ2MzA4OQ==&mid=100000689&idx=1&sn=3dea55d1b751bde752de3ecf817a8578&chksm=7cba12ef4bcd9bf91f35b9d4c89a99f1a4a17b9a31ff74028e3dfd7af769b0ba0e04c5da8eb9#rd)
+**周三**
+
+今天重点进行了步伐练习，学习了九型十三刀的前五型。步伐得到了老师第一次的表扬，说明我的节奏感还是可以的。不过中段的pose还一直在被纠正，我实在缺少对距离的感觉。
+
+坐在路边吹着小风吃了一杯子关东煮，是在去上课之前额外的乐趣
+
+**周五**
+
+周五的热身活动后，第一次玩了跳绳梯，一系列组合跳练习之后，我们三个新人选手和老师一起进行了友谊赛，全部跳跃动作连贯完成之后，用时比老师还长的要罚跳跃摆振50个。
+
+最后我拿了第一名哟，再次证明我的下肢力量和灵活性不错——大粗腿不是白粗的，跳绳也不是白练习的。虽然体重没有减下来，但还是有一些些小收获的。
+
+除了娱乐爬梯活动，今天还练习了“看打”，即步伐、挥刀、眼睛、脑袋的一起配合。举刀看对方的动作，判断，然后要有对应的挥刀。我基本几乎全部都是凌乱的。
+
+顾得过来自己的动作，就顾不来去看对方的动作。可以说是脑袋不够用，也可以说是对动作还没形成强烈的身体记忆。
+
+**周六**
+
+依然被不断纠正中段姿势，九型十三刀的所有招式也囫囵吞枣的都体验了一把，用了木刀，握起来比竹刀有感觉多了。脑子已经一团浆糊，无法指挥身体一起发起准确的攻击——这脑袋要来何用。
+
+后来回家又找了演示视频看，才知道原来上课老师一直说的剑道的禅心，其实是“残心”。我还自作多情的解读了一番这个禅心——永远不要轻视你的对手。那这下残心到底是什么呢，我还在继续摸索中。
+
+剑道的学习算我头一次正儿八经自觉自愿展开的体育运动，学生时代体育考试一直是我的噩梦，被说四肢不协调、体能不行（800米真的不行一直不及格），但是在玩爬梯的时候我发现自己的身体素质挺好的，过去都是没被调动起来（一直努力躺平），真的跳起来我是可以肉眼可见自己的进步的，仿佛发掘了一个新的自己。对于弱项，我觉得即使没有天生的优势，但还没好好操练就说是自己的弱项也有点菜。
+
+多动动脑子叭！
+
+上完课，发现七宝实在热闹极了，喝了咖啡买了煎饼，然后背对着太阳，有云有风的骑车回去，有周末的感觉了。是快乐的运动少女了。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

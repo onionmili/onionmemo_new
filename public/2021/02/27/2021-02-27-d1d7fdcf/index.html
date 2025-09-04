@@ -1,20 +1,97 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>牛腩 - 洋葱备忘录</title>
+  <meta name="description" content="牛腩">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>牛腩</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2021-02-27T05:10:01.000Z">2021-02-27</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 牛腩
+date: 2021-02-27 13:10:01
+categories: 食谱
+
+
+---
+
+周六招待了蜘蛛和他的恋爱对象，必须要做他喜欢的煲仔饭，但是又不想一直做类似的菜，从田螺的公众号里找了两个菜谱，学习了一下，收获良多。按照自己掌握的程度，记录一下，作为收藏。
+
+炖牛腩可以有很多变幻，按照一下基础打底，可以继续为清汤牛腩，番茄牛腩，红烧牛腩等扽。
+
+材料——
+
+牛腩，选择整块的，做汤就多带点肉，炖肉就多带点肥肉、牛肉筋。
+
+香料，八角、桂叶、花椒（10颗）、桂皮（一片），用在炖牛腩是增香去腥
+
+其他辅料，牛腩汤就加萝卜，番茄牛腩就加番茄+番茄酱罐头，红烧牛腩就加点香的辣椒酱，也可随意再加别的。
+
+步骤——
+
+1、去血水
+
+牛腩整块加清水，煮沸，血水去干净。
+
+2、炖牛腩
+
+干净的牛腩，拍一个生姜，加上述香料，换清水换保温好的锅，煮沸后小火炖，1小时40分钟以上。
+
+3、牛腩预处理
+
+炖好的牛腩拿出来沥干，在中火的热油锅里煎，表面焦脆，增加牛腩油脂。炖汤次步省略
+
+4、最后一步
+
+番茄牛腩，处理好的番茄和切块的牛腩一起炖20分钟左右，最后加盐调味
+
+红烧牛腩，牛腩切块加酱油、辣椒酱以及其他随意发挥，炖20分钟左右，最后加盐调味。
+
+清汤牛腩，在步骤2中直接加入萝卜，再炖30分钟以上。
+
+ 
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,88 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>关于学习剑道这件事情以及其他 - 洋葱备忘录</title>
+  <meta name="description" content="关于学习剑道这件事情以及其他">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>关于学习剑道这件事情以及其他</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2023-03-08T14:00:00.000Z">2023-03-08</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          今日蒙前辈努力所赐恩泽，得以获半天假期，难得参加了剑馆下午场的训练——只有我一个人，华子老师悠哉悠哉地说，好，正好治治你的抬手问题。
+
+某个动作的不规范，其实牵动着很多点，比如握刀姿势、比如动作次序、比如四肢协调问题等等，但是我一直觉得没有把握住核心问题。今天在和老师的指导和交流中，我才真正体会到，挥刀这个动作所牵动的应该是哪里的肌肉——首先是左腿，然后是舒展的肩膀，而我过去一直在非常努力用胳膊去挥刀，胳膊很累，累得有点委屈。
+
+今日练习，希望自己能够脑子记住并且不断练习至身体记住。
+
+下肢的力量是可以传递到刀上的
+
+多感受自己肩膀和背部，那里也是有肌肉和力量的！
+
+下肢和肩背的力量是足以挥出有力量的刀
+
+胳膊和手是控制落刀动作的结束，而不是发力的起点
+
+（我的肩膀实在是太过僵硬了）
+
+顺利被纠正了挥刀抬手问题之外，对于脚步和挥刀时机的配合，或者说，攻击时机的把握，有了一些新的收获。
+
+未到攻击时机切勿丢失中段姿势
+
+何时是攻击时机，要盯住你的对手，而不是对面的刀
+
+攻击距离是靠步伐创造，而不是靠手上的刀
+
+虽然脑子记住了，要改变自己身体的发力习惯，只是开始，脑子和身体之间还差着很多距离。
+
+即使是自己的身体，“某个我”也并不擅长去控制它，想到这里觉得很有意思。我最近才意识到身体的动作是会受“另外一个我”控制的，但是那个“我”大部分时间是依靠直觉下意识的行为。而要改变那个下意识的我，“某个我”都要付出很多努力才能改变“另外一个我”。这个过程，包括了能够觉察到下意识行动的“我”的存在，并且识别记录到“另外一个我”的行为模式，然后才能有方向去改变。
+
+另外一个例子是，我直到上周的练习才觉察到我是一个不会呼吸的人，练习的时候总是憋气到让自己体力不支。
+
+不知不觉学习剑道已经二十个月了，还在磨练第一节课开始就学习的内容，中段！步伐！举刀！落刀！气和！还没有腻，大概就是因为在这些重复动作里才得以能够觉察到自己的问题，然后在在磨练中反复不断重新认识自己。
+
+这个话题可以从剑道之外展开来说说，不仅仅是原来我有一个不受自己控制的身体，我的脑子也有很多部分并不完全很好的被自己所支配。
+
+环境、他者、社会规训、教育等等，从外界力量的帮助里我长成了一个成年人，也同时因为听取了太多声音，往往会听不到自己内心的声音（当然还有一部分并不好的声音我想假装听不到，笑）。长到现在的年纪之后，我想是时候到了一个阶段，还来得及多听听自己的声音，多了解自己，关于到底我想要改变什么或者想要坚持什么，值得和自己谈谈。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

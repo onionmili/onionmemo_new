@@ -1,20 +1,97 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>探访图书馆之行 壹 - 洋葱备忘录</title>
+  <meta name="description" content="探访图书馆之行 壹">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>探访图书馆之行 壹</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-02-20T14:00:00.000Z">2022-02-20</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 探访图书馆之行 壹
+date: 2022-02-20 22:00:00
+categories: 现在的日常
+
+
+---
+
+前记：上周末连着看完了《但是还有书籍》两季的纪录片，萌生了想去看看各种图书馆和图书馆里的人们的想法。
+
+
+
+**时间：**2.17，2022
+
+**天气：**阴雨，很冷
+
+**疫情期间：**需要微信公众号预约入馆
+
+**附近午餐：**咖喱博士
+
+**地点：**淮海中路1555号（10号线上海图书馆）
+
+
+
+上午去了医院，下午空出一个时间，在探访图书馆系列开启第一站，想想还是应该来上图。疫情期间需要在微信公众号上预约，刷预约二维码进出。
+
+现在哪个场所门口都这样拦住一个检查通道。
+
+工作日的白天，人依然很多。晃了一两个阅览室，运气很好刚好有人起身要走，能碰到一个座位。对了，阅览室进出需要刷读者证。
+
+就在二楼中文社科文献阅览区走了一圈。闲逛在书架中间，说不定能随机遇到自己感兴趣的书。
+
+果然，比如新版本的哈利波特，比如日本妖怪大师水木茂的《妖怪大全》，比如《小猎犬号航海记》是线装本，铺开在桌子上看刚好。还看到一本看起来有点可怜的《男性力量训练全指南》。逛着逛着，看到一个坐在窗沿边看书小哥，觉得像一个风景。
+
+人多但是又很安静，大概是只有图书馆了。
+
+在我幸运获得的书桌前面，把拖拉了好几天的事情做完了。屁股坐着痛了，就再站起来在一堆一堆书里晃荡一下。像成大片的橘子林里，我只能吃到一瓣。看到那么多装帧美丽的书，觉得自己手里的kindle不香了，手机也不香了。
+
+希望纸质书永远存在。
+
+在上图的新书书架发现了《平面国》，一下子看完了，新出的一版里面配了非常棒的插画，随手拍了几张，后来转头就买了这本书想要拥有。
+
+读到最后的编者记，有点扎心。原来插画的主要作者还未看到书出版就离世了。疫情的后时代，一切没那么不寻常，又切实的改变了世界，触动到了那天坐在书桌前的我。
+
+以此记。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,128 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>记洋葱的摆脱手机运动 - 洋葱备忘录</title>
+  <meta name="description" content="记洋葱的摆脱手机运动">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>记洋葱的摆脱手机运动</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2017-07-11T16:00:35.000Z">2017-07-12</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 记洋葱的摆脱手机运动
+date: 2017-07-12 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+
+
+
+
+
+---
+
+
+
+5月的某一天，我照例拥挤在地铁上，抬头环顾发现所有人都在低头看着手机，这一整齐划一之景色，让人有点慌。
+
+回去的晚上，我下定决心发起了“摆脱手机运动”，参与人：洋葱，一人。
+
+下图是当晚列下的清单。
+
+
+
+从这么多高的不可替代性，就能看出手机早就渗透我的衣食住行。为了咬咬牙贯彻本项运动，我进行了几点措施。
+
+1、买了个记账本和记录备忘提醒的随身本
+
+2、通勤的小包变成了大包，里面塞了本子和书
+
+3、卸载了大部分购物和外卖app
+
+过去了近两个月，这两个月是时候回顾一下运动阶段性效果了。
+
+
+
+1、从过去每天用app记账改成了每十天集中本子记账
+
+不方便的地方：到月中统计的时候还要一条一条统计录入电脑的表格中
+
+影响：对实际开销没啥影响，不用实时去看自己的开销反而轻松了。
+
+
+
+2、使用备忘本记录提醒事项
+
+不方便的地方：因为本子不会时时随身带，没有手机那么方便，想到啥就记录下来；也没有提醒功能，其实记录下来的事情还是容易忘记
+
+影响：容易遗漏待办事项，但往往这些忘记的事情也不大重要，不被手机催着干着干那，好像任务少了不少，真的重要的事情靠脑子也总还能记住（感谢我的脑子）。
+
+
+
+3、通勤路上少刷手机，多看书
+
+不方便的地方：通勤背包重了好多，上班路上负担重；有的时候准备的书不喜欢看，翻了几页又塞回包里开始刷手机了
+
+影响：书看的多了，手机刷的少了。最近又没啥看书的热情，重新被这个手机魔鬼抓了回去。
+
+
+
+4、删除了大部分购物app
+
+不方便的地方：想起要查点待购物品不能马上查了
+
+影响：明显买买买少了，省钱！
+
+
+
+几点感想：
+
+- 离开了手机，不那么方便，也同时，不会被手机催促的过得太紧张。
+- 打发时间最快的工具就是手机，换句话说偷走我们时间最多的也是手机。
+- 通勤的包变得越来越重，肩膀疼。
+- 本项运动还有很多可以发挥的空间，本洋葱要持续推进下去，有兴趣加入的有志之士欢迎...手机与生菜阅读联系。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

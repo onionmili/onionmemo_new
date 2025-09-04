@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>剧本杀四联小记 - 洋葱备忘录</title>
+  <meta name="description" content="剧本杀四联小记">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>剧本杀四联小记</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-01-23T14:00:00.000Z">2022-01-23</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          ---
+
+
+
+每个角色手上都有一些拼图，交换信息之后整合能嵌在一起的内容，可以拼出人物画像和关系图——这一般是第一环节。
+
+破解作案手法这一题，大家的信息应该都是对等的信息，可以抛开人物角色和关系，从设定、证据、场景出发去推理，有脑洞就能把坑填上——多动脑子可以提高自己的贡献值。人还是需要脑子的。
+
+总的来说，就是一个处理信息的过程，一堆是帮助树立人物关系信息，一堆是情节设定信息，一堆是暗示凶手的关键碎片——这个基本上会掩藏在剧本角落，在最后如果能挖掘出来，可以一锤定音。如果错过了，那么靠直觉和理性出发吧。目前玩的几个本，动机和情感线基本上都不是很好的切入口。
+
+凶手的tips：半路才知道自己是凶手的会比较难玩，但是能不前后不一致就尽量不要改发言。一定会有一个pk位，积极参与讨论把pk位揪出来，是获胜途径之一。另外一个思路，就是装死，但是划水就是狼的定律总会被人拿出来用的。
+
+玩剧本杀开会的快乐是，这几个小时之后你总会获得解谜的答案。有一些剧本可能还能额外带给你一些情感上的共鸣和触动，有一些强推理本可以获得智商上满足感。其二之一，或者二者兼有。
+
+明侦真的没有白看！还期待明侦继续出。此外，还要多看看推理本，保持脑袋的运动。下定决心先把书柜里的库存清一清。
+
+最后的感言是，虽然理性不是万能的，但是能成为一个理性的人，是一件令我自己觉得庆幸的事情。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

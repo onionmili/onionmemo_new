@@ -1,20 +1,110 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>五月病 - 洋葱备忘录</title>
+  <meta name="description" content="五月病">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>五月病</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2018-05-31T08:35:44.000Z">2018-05-31</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 五月病
+date: 2018-05-31 16:35:44
+categories: 现在的日常
+
+---
+
+五月过得非常充实，充实到一转眼就是月底最后一天，我还没来得及交作业。
+
+
+
+本来是有很多话题可以去写一写的。
+
+
+
+重温了流星花园，仔仔是永远不可超越的类，但是其实这个故事只不过是靠绝食和父母抵抗校园恋情而已。
+
+入手了新玩具，一款豪华游戏，硬生生被我完成了采蘑菇的小姑娘，流连于野外风景，完全忌惮于打怪兽。感觉已经玩坏了...
+
+勇士终于在众人的口水中跌跌撞撞闯进了总决赛。
+
+一些工作计划、生活计划客观上来讲都在稳步进行。
+
+
+
+但是在五月里内心最频繁的呐喊就是——好——累——啊——
+
+在无法排解的倦意下，人变的易燃易爆炸，种种并不可爱的面目也暴露出来。
+
+
+
+这种疲惫可能来自太多充实，太过规律的生活，让人无法喘息。
+
+还可能是因为表面的充实之下，并没有太多的成就感。
+
+
+
+截至今天，看书复习的计划delay了七天，五月的减肥计划仍然差两斤没有完成。
+
+我并不是个很善于面对挫折的人，要一而再再而三地鼓起勇气，越挫越勇是个很难的课题。
+
+
+
+慢慢学习自我鼓励（比较指望不上最近也在沉迷游戏机和工作的家属），暗示自己，至少已经看完了两本了，毕竟前四个月一共才减了五斤，这一个月减了三斤已经可喜可贺。
+
+
+
+最近在看一本小说，主人公也是一个敏感又充满缺点的人，每天背着这本书在魔都的地铁里穿梭，仿佛找到了可以自我安慰的同伴。
+
+
+
+内心还是有很多隐忧很多疲倦。我也知道cd可以有，但还是要被迫原地复活——这是一种无法摆脱的本能——将生活继续下去。
+
+
+
+以上
+
+因为五月病而无法写更长的无病呻吟
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

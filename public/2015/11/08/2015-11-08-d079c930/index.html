@@ -1,20 +1,94 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>立冬 - 洋葱备忘录</title>
+  <meta name="description" content="立冬">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>立冬</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2015-11-07T16:00:35.000Z">2015-11-08</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 立冬
+date: 2015-11-08 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+---
+
+今天完成了人生第一场职业考试。离开学校以后，原以为再也不用考试了。想想，年轻的时候就是这么天真。
+
+
+
+按理说，职业考试是纯为自己考的，应该更努力一点，相反，每天回家就恨不能一直窝被窝里。我亲爱的朋友说，你要不要这么生无可恋。是的，作为一个二十多岁正是大好奋斗时节，我可真是不求上进，对不起党和组织这么多年的栽培。
+
+
+
+立冬，天特准时的冷了下来。出考场的时候，冻成狗。很想和卤肉饭同学打电话，欢呼雀跃地说一句，考完了，好冷，我要吃火锅。有点酸。
+
+
+
+最近这首歌大概很火？不然不会在出租车的广播里听到这么复古的歌。
+
+如果是18岁的我，会觉得这歌好大妈，如果是28岁的我，可能听到“不肯不可不忍不舍失去你“会脸红。现在听到，竟然偷偷掉了眼泪。
+
+
+
+开始接受异地恋的现实，是种什么滋味呢，想吃火锅的时候没人陪还好，去菜场买菜重的袋子没人拎还好，哪怕回家之后一万分的安静也还好。但，不管遇到什么时候还好还能见到还能拥抱——这种“还好”失去了，唯有思念滋味不美。卤肉饭今天跟我说，他们公司的司机与他闲聊到老婆在巴基斯坦，每年只能回去一次见老婆孩子，非常非常想念他们，每分每秒都很想念，一个四十多的汉子说起就这么哭了。哎，何处不思念。
+
+
+
+本来卤肉饭在家的时候，我是很烦的。他总是懒在沙发里，调个好看的电视节目勾引我一起看，他总是吵着要吃这个菜那个菜，害我花太多时间在厨房，所以今天的职业考试考不过，百分百赖他。
+
+
+
+初中语文老师教，“立”是即将的意思，立冬并不是说到冬天了，而是作“冬天就要来了”之解。
+
+
+
+今天是，冬天的预告片。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

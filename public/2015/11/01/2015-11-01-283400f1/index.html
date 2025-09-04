@@ -1,20 +1,80 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>2015-11-01-283400f1 - 洋葱备忘录</title>
+  <meta name="description" content="2015-11-01-283400f1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>2015-11-01-283400f1</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2015-10-31T16:00:35.000Z">2015-11-01</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          itle: 十一月的第一天
+date: 2015-11-01 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+---
+
+十一月的第一天是我一位好友的生日，我又差点忘记。也不是不记得她生日，而是后知后觉已经十一月了。
+
+
+
+对时间越发不敏感了，日子浑浑噩噩。
+
+生活是一尘不变的，应付邮件、应付任务，想想一日三餐吃点什么，啊，冬天终于要来了，羽绒被得翻出来了。又觉得生活很波折，卤肉饭同学总是能带给我很多新消息，我下个月要出国啦，我下个星期就要出国啦，啊，我明天就要飞了，我在那边感冒了。
+
+说对生活不敏感了，不是很准确，是越来越惧怕时间了。少年随着四季随着风儿奔跑的青春再也不见了，对未来的展望也不再意气风发。每一个计划里想得最多的是，需要多少时间，需要多少精力，预期能收获多少回报，对以后的日子有多大的好处。患得患失的症状愈发严重，怕错一步步步错，反而一步不敢走了。
+
+国庆回家的时候，妈妈替我焦心，问我以后的打算，长辈的心情是希望子女早早安稳下来——女儿家又多少时间可以消耗呢？哎，每次回家就要遭受性别区别论的轰炸。
+
+没心没肺的日子过惯了，突然跌入什么都要思前想后的漩涡里，大概还要再挣扎一阵才能适应吧。
+
+
+
+以上。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

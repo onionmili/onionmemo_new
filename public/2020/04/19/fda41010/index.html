@@ -1,20 +1,77 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>本周更新 - 洋葱备忘录</title>
+  <meta name="description" content="本周更新">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>本周更新</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2020-04-19T09:00:35.000Z">2020-04-19</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 本周更新
+date: 2020-4-19 17:00:35
+categories: 更新日志
+
+
+---
+
+## 
+
+本周五的晚上更新了15年-17年这一段时间，在生菜大大的公众号生菜阅读（现在更名为生菜日日谭）发布的二十篇博客。
+
+最开始，生菜阅读的主题是——人人写给人人，发布包括公众号作者本人以及他周围人的各种文章，主题不限，写作质量也没有要求，唯一是希望每天更新——这个标准已经很高很高了。
+
+14年某一次为了搜集更新素材，向各位读者征集博客链接，因为这个契机我把在博客大巴的地址发了过去，并且在生菜阅读更新了第一篇文章。
+
+后来和生菜阅读熟悉之后，我成为了生菜阅读的小编，负责选择更新素材、制作每天更新的排版。更进一步，又在那儿开了一个小专栏——洋葱卤肉饭。因为这个专栏，促使我保持了一段时间的记录文字的频率，直到后来我自己开辟的公众号。生菜大大本人也因为工作重心的转移，公众号转型了。
+
+15-17年刚好是我刚刚迈入社会的迷茫期，和卤肉饭也进入了一段时间的异国恋的考验。给这一段时间的博客分类在——一个人的生活。无论从生活状态还是心理状态，我都在尝试学习更加独立。不过，有些语言表达过于幼稚，几年后的我看来有点捂脸。但是，洋葱备忘录的本意就是记录过去、现在。所以，过去是什么样就是什么样吧——原汤原味。
+
+另外有几篇，是关于电影、关于篮球的就分类在 读书电影旅行游戏体育这类目下了。（这个分类名称太长了，下回改改）
+
+周五晚上，把博客素材整理好之后，寻思接下来要把15年之后的内容整理整理。记得在博客大巴有过一些短暂的更新，读书的时候最多更新的好像是qq空间和人人网。翻了一下qq空间，那个时候乱七八糟更新了几百篇的废话，头疼该如何整理中。大概会按照篇幅、年份做一些汇总，塞进来完事。希望没有人去看了😢。
+
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

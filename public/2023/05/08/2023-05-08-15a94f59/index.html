@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>游戏苦手 - 洋葱备忘录</title>
+  <meta name="description" content="游戏苦手">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>游戏苦手</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2023-05-08T14:00:00.000Z">2023-05-08</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          连上了6天班，精神受到摧残。连休了6天假，已经不想上班。回到了某个轨道，回到熟悉的通勤之路，普通而规律的生活给予了一定量的安慰剂。
+
+上上周某一天去了附近的学校操场跑圈，我还记得自己大学时候每个学期800米因为都跑不下来而要重考，现在不说跑得有多快，至少跑几个圈是觉得轻松而愉快的事情。去跑圈是为了测自己的最大心率，然而测出来低到令我怀疑自己是不是没有用尽全力。但是，又想到去嵊泗爬坡的时候，吭哧吭哧我的心率也就这么点儿了。那我还是相信自己有一颗强壮的心脏而不要质疑自己。
+
+五一假期是从家里的浴室下水道堵住开始的，我熟练地从收纳柜里掏出了疏通剂，吨吨吨灌进去一瓶，把水漫满地的卫生间门一关，淡定地玩了一晚上雀魂友人局，之后，再深吸一口气，蹲在卫生间里擦了半天地。如果是以前，遇到下水道堵住我总是很烦躁的，而对此类事故熟悉之后，变成了生活里最简单的关卡，包括定期储存疏通剂，定期维护管道，万一不小心堵了也有预期的初级解决方案，和最终解决方案和应急预案，于是我就不再需要烦躁了。
+
+假期里我的第一次跑团活动结束，有点失落，几个队友各自分别了，孤独的人并没有交到朋友，但是赢得了老板的信任——他竟然把我们冒险的主船送给了我，令我意外的结局。说起来我是一个游戏苦手，塞尔达DLC买来一年多了，摩托车还没骑上，被困在某个神庙里动弹不得。这周末特地为了喜迎国王之泪翻出来想“让我再试试”，依然是100%失败。
+
+连接混乱上班日和假期之后的唯一一天的周末，下定决心把冬天的被子衣服收拾掉了，换上了初夏的被子，有点夏天的气氛了，不洗澡的小猫咪大大咧咧就率先先躺上去，我也不嫌弃ta，小猫咪真的好开心啊，小猫咪是否知道有一个人类是如此的羡慕ta。
+
+最近一件令人振奋的消息是，我遇到了一个挺靠谱的车店技师老板，把公路车的刹车问题解决了，原先刹车片已经磨损到令人发指的程度，还有刹车线装错地方的情况，变速线也重新拉了一下。所以，我之前对速度害怕的感觉和觉得自己控制不住速度的感觉是完全击中，我果然是和车有心灵感应的！
+
+零零碎碎絮絮叨叨，我想说的其实是，在这些曲折事件经历过程中，我更加相信自己的感觉了，并逐渐朝着令自己舒适的方向靠近。
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

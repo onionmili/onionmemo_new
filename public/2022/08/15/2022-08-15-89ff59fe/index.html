@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>夏日尽 - 洋葱备忘录</title>
+  <meta name="description" content="夏日尽">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>夏日尽</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-08-15T14:00:00.000Z">2022-08-15</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 夏日尽
+date: 2022-08-15 22:00:00
+categories: 现在的日常
+
+
+---
+
+真希望能拥有一个冥想盆啊，把整个混乱的夏天塞进去，不要再干扰我大脑的正常运行。
+
+这个夏天刺眼的阳光很难让人忘却，早上七点多出门就已经明晃晃的把世界照亮无一阴影了，像一根被点燃的镁条。
+
+我的心一直强壮地跳动着，去面对这样焦灼的日子，汗流浃背的日子和时不时会崩溃的日子。
+
+从没有经历过这么漫长的两个月，像走马灯一样过去的十年，一直在我眼前晃过，一切都被浓缩进了这两个月里，比意式浓缩还苦一些。
+
+人生的方向发生了很大的变化，曾经以为进入了一种普通、安稳、令人心安的轨道，会一直持续走下去，忽然戛然而止。迫使我离开，迫使我重启——这句话有问题，到底是谁在迫使我，仔细想想，只是我被我自己的自尊和自我督促着，以千千万万不要留恋的姿态离开了。
+
+思来想去，总觉得与其以后反反复复要解释要回答，不如就集中式地更新一下我最近的情况。在这样的夏天里，我和卤肉饭共同决定并且已经分手了。这是一个突然但深思熟虑并且很坚定的决定，相信是对我们双方都好的一个决定。从此刻开始，从“我们”变回了“我”。关于这其中发生了什么，对我而言还在消化还在理解，或者可能我永远理解不了就这样放下，往前走。不过目前，我一切都还好，呼吸心跳正常，开始一段新的生活，还怀揣着积极、乐观的态度。
+
+总觉得说完这么大件事情之后，还要说点什么来掩饰一下这种令人震惊的气氛，可是我实在不知道说什么。因为我也不知道我的现在是如何，我的未来又会如何，我该憧憬什么，放弃什么。前一脚从一段迷雾里艰难穿行出来——对于过去的不解我算是有了一个还没弄懂的答案，又进入了一段新的迷雾——对于未来的迷茫深深笼罩着我。所以，抱歉，朋友们，总是习惯周到照顾气氛的我，也没办法在此时此刻说出什么可以圆场的话了，我的生活就这样突然仿佛被按下了静音键一样，被沉默淹没了。
+
+谈不上好或者不好，发生在这个像点燃无数根镁条的夏天里的一切，结束了。以上。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Head in the clouds - 洋葱备忘录</title>
+  <meta name="description" content="Head in the clouds">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>Head in the clouds</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2022-11-29T14:00:00.000Z">2022-11-29</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          早上九点多在站台等122公交车去地铁站，忽然饿了，于是从纸袋子里取出一片面包啃了起来，这是昨天特地去买的，预备给今天要去天文馆路上吃。是外皮韧道面芯湿润松软的好面包，一边嚼一边想，可惜本来要一起去天文馆的一路神吃不到了。
+
+九点醒来的时候看到一路神八点的留言——“楼被封了”，于是我们今天的行程就如之前预计好的取消了，我继续朝着习惯的上班路线前进。
+
+小时候，大人说好要带我出去玩，总是说“再说”，到那天就可能因为“有事”而我只能乖乖在家呆着。我总是对这样放我鸽子的事情记忆深刻，深刻的还有那个耷拉着脸撅着嘴巴的小孩。生活里除了上学作业睡觉吃饭之外，一点点小小的期盼我大概会托着腮帮子想很久，而到最后甚至大人们不会好好和你解释什么叫“有事”，就把你一个人放家里了。
+
+长大后，我以为可以拥有安排自己生活行程的自由了，生活又教我深刻体会什么是“不可抗力”。
+
+比如，一个咖啡展览已经延期两次还不知道何时开展，从我十一月的安排里一直后移到十二月直到可能最终是取消。
+我有点气馁，我想放弃计划、放弃期盼。然而，下午还是和田讨论了半天去看音乐剧去博物馆去旅行。即使，讨论的大部分内容围绕着“不知道下周会怎么样，我们这周早点去” “我的通行证过期了，要办已经排到了明年” “如果圣诞出上海，那元旦假期哪里都去不了了”以及，被人提醒，那你出去要看看当地是不是限制外来人员出入公共场所。我倒心怀感激身边还有愿意和你一起计划下个月要做点什么的人。
+
+我又想起了抱抱，每一次都充满希望地守在门口，等着被人带出去玩，永不知气馁。好希望变成一只狗啊。
+
+群里大家再度讨论冰箱的话题了，我打开冰箱，除了一些可乐苏打水和酒精，还有一份鸡蛋，是大概四月份收到的物资包里遗留品，至今没有吃，说不定哪天可以作为生化防身武器。忽然想到最下面的保鲜层里面还有一些曾被我我精心保存的蔬菜，打开的画面只有腐烂的叶子浸泡在保鲜袋里了。想了一下，唔，家里还有一些过期了的泡面。这一切都是上海的四月为我留下的痕迹，我还没有擦干净它们。
+
+白天，我在自己的速记本里pin了一句话：不要活在计划里。入夜，当我敲下这些字之后，我发现更不希望活在过期、腐烂和发臭的鸡蛋里。所以哪怕对生活期盼的尺度已经缩小到一周内，而失望可能在一小时内就会送达，仍然勇于期盼，报之以歌，继续涂改我的行程本。
+
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

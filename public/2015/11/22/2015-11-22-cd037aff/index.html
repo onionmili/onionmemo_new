@@ -1,20 +1,93 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>东川路的一些小事 - 洋葱备忘录</title>
+  <meta name="description" content="东川路的一些小事">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>东川路的一些小事</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2015-11-21T16:00:35.000Z">2015-11-22</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          title: 东川路的一些小事
+date: 2015-11-22 00:00:35
+categories: 一个人的生活
+
+
+
+
+
+
+---
+
+过去的一周，如果要贴个什么标签，我想SJTU莫属。
+
+
+
+头几天，生菜的一篇拉票文，勾起了无数曾经身在偏僻大闵行的宅男宅女们的回忆。comic、葡萄、东川路、永平路各种外卖小店、滋养了他们（我们），还有每一位离开学校后，都会无比怀念的校园网络——而且是免费的。
+
+
+
+恰巧，这一周我也回了两趟闵行，一次因为开会，一次因为开在新体的招聘会。大概是很久没回去了吗？学校发生了很多变化，菁菁堂有了新的校车站和校车，当然还是半个小时才有一班，看运气才能坐上。新体旁边多了个李政道图书馆，圣南体的草坪好像新铺了，桥洞的涂鸦一届又一届地覆盖着，再也认不出熟悉的图案。
+
+
+
+对于“回去”我的心里是抗拒的。比喻来讲，曾经有一段特别美好的恋情，回头是否还想再去见见前度，答案取决于你是开着玛莎拉蒂还是永久牌。不过，我现在连一辆“永久”都没有。
+
+
+
+周末，大学的姐妹们小聚。去了徐汇的一家火锅店，走到门前发现，五年前围观一位小朋友的三国杀比赛后的庆功宴就是同一家。再次感概，时光荏苒岁月如梭。
+
+
+
+聚会席间的话题，从过去的吐槽八卦叽叽喳喳，不知不觉变成了“工资”、“买房”、“催婚”和最后的长叹一声，沉默一秒。我唯一能做的是，努力多涮点肥牛，以获取短暂的满足感。
+
+
+
+从那一年夏天，各自踏上不同的路后，姐妹们的生活很少再有交点，一趟相约的旅行也很难再全搭同一个航班，但仍愿情谊珍藏心中，想赚钱的赚钱，想恋爱的恋爱，想毕业的毕业，想吃肉的多吃肉。
+
+
+
+今天的题图是，二餐新疆餐厅的羊肉饭——美好的回忆最好就留在回忆里的物证。
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>

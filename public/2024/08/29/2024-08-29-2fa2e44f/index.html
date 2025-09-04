@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html>
-<%- partial('_partial/head') %>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>一些小小的起起伏伏 - 洋葱备忘录</title>
+  <meta name="description" content="一些小小的起起伏伏">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
-        <section id="main"><%- body %></section>
-        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-        <% } %>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
       </div>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>一些小小的起起伏伏</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="2024-08-28T16:00:00.000Z">2024-08-29</time>
+          
+        </div>
+        <hr>
+        <div class="picture-container">
+          
+        </div>
+        <div class="post-content">
+          
+> 本文转载自[微信公众号](https://mp.weixin.qq.com/)的导出文章
+8月27号 某品牌手机的发布会时间发布。
+
+这只是普普通通的一天。
+
+这只是我把我的手机掉厕所蹲坑洞里的普普通通的一天。
+
+可怜的小手机在坑里待了30分钟，期间被灵敏的自动冲水设备洗刷了无数次，没人能想象它经历了什么。
+
+而我，
+
+守在有它的小隔间门口，带着思考人生的表情凝望窗外，等待手机救援人员的到来。
+
+期间，
+
+无数次和往来看热闹的阿姨大姐们解释——
+
+“啊，对，我不是在排队等厕所”
+
+“啊，对，我手机比较小就掉下去了”
+
+“啊，嗯，可能捞上来也坏了”
+
+“啊，是，救援人员还没到”
+
+同时开始想象，没有手机之后的方案。
+
+能不能回家——能，随身带现金和公交卡还是一个好习惯。
+
+万一手机捞不上来，电话卡还需要补办——可我最近刚把身份证丢了，正在补办。
+
+等等，没有手机卡，邮政快递怎么和我联系送身份证的事情。
+
+——卡住了，等等
+
+…….
+
+今天的事情因为没手机也一点也干不了，明天还要请假...烦躁的情绪开始升腾。
+
+我深深体会到，这个世界没有了我将一切安好，但是没有了手机就一塌糊涂。
+
+我还在想象，把今天这一幕告诉乐师傅之后，他会不会怪我上厕所没把手机放好，if so，我一定会因为在气头上和他大吵一架。
+
+我又想到今天是什么日子，开始怀疑手机它自己长腿了。
+
+事情的结局是——
+
+手机被捞上来了，而且它竟然还能用。
+
+也没有发生幻想中的指责和吵架，乐师傅只是全心投入到采购一条手机绳的工作之中。
+
+人生就是会在你的已经做好各种糟糕打算的时候，给你一个超预期的回报。
+
+当晚，带着可能不太卫生的手机回家，但是我对它坚韧不拔的品质表示巨大的赞许。
+
+同时，当晚，我在晾晒多日的洗衣袋里发现了我以为丢了的身份证——真是充满惊喜的一天。
+
+后记，第二天，当我以为世界恢复如常之后，手机陆陆续续延迟出现各种进水之后应该出现的故障。于是，我前一天设想的没有手机的后备方案如愿用上了。
+
+又是一份惊喜。
+
+此时此刻又要祭出这张真理图了。
+
+![](./assets/17556660417510.49103544638858077.jpeg)
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
     </div>
-    <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
-    <%- partial('_partial/after-footer') %>
   </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-2025</p>
+  </footer>
 </body>
 </html>
