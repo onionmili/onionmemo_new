@@ -281,8 +281,94 @@ async function fixPlnBuild() {
     const fullArchiveHtml = archiveHtml + archiveContent + archiveFooter;
     fs.writeFileSync(path.join(archiveDir, 'index.html'), fullArchiveHtml);
     
-    // 8. 复制CSS文件
-    console.log('8. 复制CSS文件...');
+    // 8. 手动为每篇文章生成正确的pln主题HTML
+    console.log('8. 为每篇文章生成正确的pln主题HTML...');
+    
+    let processedCount = 0;
+    
+    for (const post of sortedPosts) {
+      try {
+        // 生成pln主题风格的文章页面HTML
+        const articleHtml = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>${post.title} - 洋葱备忘录</title>
+  <meta name="description" content="${post.excerpt || post.title}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/m.min.css">
+</head>
+<body>
+  <a id="top"></a>
+  <div id="main">
+    <div class="main-ctnr">
+      <div class="behind">
+        <a href="/" class="back black-color">
+          <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+            <path d="M2 30 L30 2 M30 30 L2 2"></path>
+          </svg>
+        </a>
+        <div class="description">
+          &nbsp;回到首页
+        </div>
+      </div>
+      
+      <article class="standard post">
+        <div class="title">
+          <h1>${post.title}</h1>
+        </div>
+        <div class="meta center">
+          <time datetime="${post.date.toISOString()}">${post.date.format('YYYY-MM-DD')}</time>
+          ${post.categories && post.categories.length > 0 ? `• ${post.categories.map(cat => cat.name || cat).join(', ')}` : ''}
+        </div>
+        <hr>
+        <div class="picture-container">
+          ${post.photos && post.photos.length > 0 ? post.photos.map(photo => `<img src="${photo}" alt="文章图片">`).join('') : ''}
+        </div>
+        <div class="post-content">
+          ${post.content}
+        </div>
+      </article>
+      
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <div class="busuanzi center">
+        阅读次数:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+        网站访问:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+        访客数量:&nbsp;<span id="busuanzi_value_site_uv"></span>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <p>© 洋葱 2015-${new Date().getFullYear()}</p>
+  </footer>
+</body>
+</html>`;
+        
+        // 确保文章目录存在
+        const articleDir = path.join('public', post.path);
+        if (!fs.existsSync(articleDir)) {
+          fs.mkdirSync(articleDir, { recursive: true });
+        }
+        
+        // 写入正确的HTML文件
+        const articlePath = path.join(articleDir, 'index.html');
+        fs.writeFileSync(articlePath, articleHtml);
+        
+        processedCount++;
+        
+        if (processedCount % 50 === 0) {
+          console.log(`  已处理 ${processedCount}/${sortedPosts.length} 篇文章`);
+        }
+        
+      } catch (error) {
+        console.error(`处理文章失败 ${post.title}:`, error.message);
+      }
+    }
+    
+    console.log(`✅ 成功处理了 ${processedCount} 篇文章页面`);
+
+    // 9. 复制CSS文件
+    console.log('9. 复制CSS文件...');
     const cssSource = path.join('themes', 'pln', 'source', 'css', 'm.min.css');
     const cssDest = path.join('public', 'css', 'm.min.css');
     
@@ -292,7 +378,8 @@ async function fixPlnBuild() {
     }
     
     // 9. 验证结果
-    console.log('9. 验证生成结果...');
+    // 10. 验证生成结果
+    console.log('10. 验证生成结果...');
     
     if (fs.existsSync('public/index.html')) {
       const indexContent = fs.readFileSync('public/index.html', 'utf8');
